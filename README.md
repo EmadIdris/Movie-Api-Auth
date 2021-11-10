@@ -77,9 +77,9 @@ http://localhost:3030/signup
 
 ***
 
-# [Heroku]()
+# [Heroku](https://project-401-auth.herokuapp.com/)
 
-# [Pull-Request]()
+# [Pull-Request](https://github.com/EmadIdris/Movie-Api-Auth/pull/3)
 
 ***
 > To Start ``` npm start```
