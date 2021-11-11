@@ -1,6 +1,6 @@
 # Movie-Api-Auth
 ***
-## Partner
+## Collaborator developers🔻
 
 + Emad Idris
 + Samah Hamed
@@ -8,16 +8,17 @@
 + Wesam Alqawasmeh
 + Omar Nabeel
 
-# Overview
-This App is a back end API. The back end allows a user to Sign up, sign in read, create, update and delete based on the users authorization level. The four levels are user, writer, editor, and admin .
+## Overview🔻
+<!-- This App is a back end API. The back end allows a user to Sign up, sign in read, create, update and delete based on the users authorization level. The four levels are user, writer, editor, and admin . -->
+Movie-Api-Auth is a simple server. Which allows the client to send requests for account creation, update, delete, and to choose the role that will give the user the accessability to our data, we used `RBAC` mechanism to define the user roles. Also the client can request for movies list containes a different types of movies, update list, add to the list, delete from the list it depends on the user role.
 
-# UML
+## UML🔻
 ![](./lab09UML.png)
 ![](./project.png)
 
-## END POINT
+## Sample of requests🔻
 ```
-http://localhost:3030/v2/movies
+get ==> http://localhost:3030/v2/movies
 ```
 ```
 [
@@ -52,7 +53,7 @@ http://localhost:3030/v2/movies
 ```
 
 ```
-http://localhost:3030/signup
+post ==> http://localhost:3030/signup
 ```
 ```
 {
@@ -76,23 +77,30 @@ http://localhost:3030/signup
 ```
 
 ***
+## Related links🔻
 
-# [Heroku](https://project-401-auth.herokuapp.com/)
+### [Heroku](https://project-401-auth.herokuapp.com/)
 
-# [Pull-Request](https://github.com/EmadIdris/Movie-Api-Auth/pull/3)
+### [Pull-Request](https://github.com/EmadIdris/Movie-Api-Auth/pull/3)
 
-***
-> To Start ``` npm start```
-
-> To Test ``` npm test```
 
 ***
-## Setup
+## Setup to get this server working ❗ 
 
-`.env` **requirements**
+1. Fork this repo and clone the forked one on your machine.
+
+2. `npm install ` to install all of the dependencies 
+
+3. `.env` **requirements**
 
 - `PORT` - Port Number
 
 - `DATABASE_URL` = Postgres DB
 
 - `SECRET` = JWT SECRET
+
+
+***
+> To Start =>  ``` npm start```
+
+> To Test =>  ``` npm test```
