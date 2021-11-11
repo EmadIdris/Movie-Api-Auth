@@ -51,7 +51,12 @@ const userSchema = (sequelize,DataTypes) =>{
     model.beforeCreate (async (user)=>{
         let hashedPass = await bcrypt.hash(user.password , 10)  //hash password (originalPassword , complixity)
         user.password = hashedPass; // 12345 =>  jsgadjh
-    })
+    });
+
+    model.beforeUpdate (async (user)=>{
+        let hashedPass = await bcrypt.hash(user.password , 10)  //hash password (originalPassword , complixity)
+        user.password = hashedPass; // 12345 =>  jsgadjh
+    });
     //emad => asdaasd UN : emad
     //asdasd          PA :12345  // asdasd
     model.authenticateBasic = async function (username,password) {
